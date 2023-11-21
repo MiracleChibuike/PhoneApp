@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Defining My Root Selector Colors */
+:root {
+  --white-Primary: #f1f1f1;
+  --white-Secondary: rgb(182, 180, 180);
+  --dark-Primary: #010101;
+  --dark-secondary: rgb(47, 46, 46);
+  --green-Main: rgb(20, 100, 50);
+  --blue-Main: rgb(124, 126, 236);
+  --semi-yellow: #503606;
+  --primary-Orange: #ffa500;
+  --red-Main: rgb(154, 7, 7);
+}
+body {
+  font-family: "Kalam", cursive;
+  background: var(--dark-Primary);
+}
+
+/* For the headre */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 70px;
+    /* box-shadow: 0px 3px 10px var(--white-Secondary); */
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-secondary);
+    z-index: 100;
+}
+.primaryheading{
+    color: var(--white-Primary);
+    font-size: 2rem;
+}
+/* For the nav-links */
+.nav-links i{
+    color: var(--blue-Main);
+    margin: 8px;
+    font-size: 20px;
+   color: var(--blue-Main);
+}
+.nav-links i:hover {
+    cursor: pointer;
+    color: var(--white-Secondary);
+}
+
+/* For the Contacts Container */
+.AllContactsContainer{
+    position: relative;
+    top: 80px;
+    display: grid;
+    grid-template-columns: 1 auto;
+    row-gap: 10px;
+    padding: 15px;
+    margin-bottom: 200px;
+}
+.firstContact, .SecondContact, .ThirdContact{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    /* z-index: -1; */
+}
+.firstContact:hover, 
+.SecondContact:hover, 
+.ThirdContact:hover{
+    background: var(--dark-secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.contactName{
+    color: var(--white-Primary);
+    font-size: 1.5rem;
+}
+.iconInfo{
+    margin-left: 10px;
+}
+.userIcon{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    background: var(--semi-yellow);
+    color: var(--primary-Orange);
+}
+.details{
+    color: var(--white-Secondary)
+}
+.phoneMobile {
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+    color: var(--white-Secondary);
+    font-size: 10px;
+    width: 100px;
+    /* z-index: -1; */
+}
+/* #incoming-arrow-icon{
+    color: var(--green-Main);
+    position: relative;
+    left: -10px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Must be shifting this downwoards */
+/* For the Footer-Bottom */
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px; */
+    padding: 0 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    color: var(--white-Secondary);
+    background: var(--dark-secondary);
+    z-index: 100;
+}
+
+.footerBottom i{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.footerBottom i:hover {
+   cursor: pointer;
+   font-weight: bold;
+}
+.footerBottom p{
+    font-size: 13px;
+}
+.recentcalls{
+    position: relative;
+    left: -10px;
+}
+.contacts{
+    position: relative;
+    left: -15px;
+}
+.SimBoard{
+    position: relative;
+    left: -15px;
+}
+
