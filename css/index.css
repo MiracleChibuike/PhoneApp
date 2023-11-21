@@ -20,6 +20,7 @@ body {
   background: var(--dark-Primary);
 }
 
+
 /* For the headre */
 .header{
     display: flex;
@@ -41,7 +42,7 @@ body {
 .nav-links i{
     color: var(--blue-Main);
     margin: 8px;
-    font-size: 20px;
+    /* font-size: 20px; */
    color: var(--blue-Main);
 }
 .nav-links i:hover {
@@ -75,7 +76,7 @@ body {
 }
 .contactName{
     color: var(--white-Primary);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .iconInfo{
     margin-left: 10px;
@@ -147,6 +148,7 @@ body {
 .footerBottom i:hover {
    cursor: pointer;
    font-weight: bold;
+   color: var(--white-Primary);
 }
 .footerBottom p{
     font-size: 13px;

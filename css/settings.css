@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Defining My Root Selector Colors */
+:root {
+    --white-Primary: #f1f1f1;
+    --white-Secondary: rgb(182, 180, 180);
+    --dark-Primary: #010101;
+    --dark-secondary: rgb(47, 46, 46);
+    --green-Main: rgb(20, 100, 50);
+    --blue-Main: rgb(124, 126, 236);
+    --semi-yellow: #503606;
+    --primary-Orange: #ffa500;
+    --red-Main: rgb(154, 7, 7);
+}
+
+body {
+    font-family: "Kalam", cursive;
+    background: var(--dark-Primary);
+}
+/* for the main container */
+.main{
+    color: var(--white-Primary);
+    padding: 20px;
+}
+h2 i{
+    color: var(--blue-Main);
+}
+.visibility{
+     padding: 10px;
+}
+.visibility:hover{
+    background-color: var(--dark-secondary);
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* .visibilityIcon{
+
+} */
+.case{
+    margin-left: 25px;
+}
