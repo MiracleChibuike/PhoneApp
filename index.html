@@ -35,20 +35,54 @@
             <!-- <i class="fa-regular fa-moon" id="case"></i> -->
             </div>
         </div>
-        <!-- Container for the bottom - Footer -->
+        <!------------------- Container for the bottom - Footer ---------------------->
         <div class="footerBottom">
-            <div class="icon1">
-                <i class="fa-solid fa-clock"></i>
-                <p class="recentcalls">Recents</p>
-            </div>
-            <div class="icon2">
-                <i class="fa-regular fa-user"></i>
-                <p class="contacts">Contacts</p>
-            </div>
-            <div class="icon3">
-                <i class="fa-solid fa-sim-card"></i>
-                <p class="SimBoard">SimBoard</p>
-            </div>
+            <!-- For the Calls Icon -->
+            <section id="NumbersDial">
+                <div class="dial GridContainer">
+                    <div class="displayNumbers"></div>
+                    <div class="phones">
+                        <button value="1" onclick="DisplayNum(1)">1 <p>00</i></p></button>
+                        <button value="2" onclick="DisplayNum(2)">2 <p>ABC</p></button>
+                        <button value="3" onclick="DisplayNum(3)">3 <p>DEF</p></button>
+                        <button value="4" onclick="DisplayNum(4)">4 <p>GHI</p></button>
+                        <button value="5" onclick="DisplayNum(5)">5 <p>JKL</p></button>
+                        <button value="6" onclick="DisplayNum(6)">6 <p>MNO</p></button>
+                        <button value="7" onclick="DisplayNum(7)">7 <p>PQRS</p></button>
+                        <button value="8" onclick="DisplayNum(8)">8 <p>TUV</p></button>
+                        <button value="9" onclick="DisplayNum(9)">9 <p>WXYZ</p></button>
+                        <button value="*" class="sarKey" onclick="DisplayNum('*')">*</button>
+                        <button value="0" onclick="DisplayNum('0')">0 <p>+</p></button>
+                        <button value="#" onclick="DisplayNum('#')"># </button>
+                
+                    </div>
+                
+                    
+                </div>
+                <!-- For the calls On Phone -->
+                <div class="calls">
+                    <i class="fa-solid fa-phone" id="Sim1"></i>
+                    <i class="fa-solid fa-phone" id="Sim2"></i>
+                    <i class="fa-solid fa-grip " id="showNumbers"></i>
+                </div>
+            </section>
+            <section class="downIcons">
+               
+                <div class="icon1">
+                    <i class="fa-solid fa-clock" id="recentIcon"></i>
+                    <p class="recentcalls">Recents</p>
+                </div>
+                <div class="icon2">
+                    <i class="fa-regular fa-user" id="contactsIcon"></i>
+                    <p class="contacts">Contacts</p>
+                </div>
+                <div class="icon3">
+                    <i class="fa-solid fa-sim-card" id="simIcon"></i>
+                    <p class="SimBoard">SimBoard</p>
+                </div>
+            </section>
+            <!-- For the Icon To hold the Div On Click -->
+            <i class="fa-solid fa-grip-vertical " id="hideandDisplay"></i>
         </div>
 
         <!-- Contacts Container - i.e the container that will contain all the availble phone contacts -->
