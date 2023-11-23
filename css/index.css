@@ -252,7 +252,7 @@ body {
     padding: 14px;
     position: absolute;
     bottom: 100px;
-    left: 190vh;
+    left: 60vh;
 }
 #hideandDisplay:hover{
     cursor: pointer;
@@ -267,15 +267,15 @@ body {
     text-align: center;
 }
 /* For the 2 Phone call rings icon */
-#Sim2:hover, #Sim1:hover{
+/* #Sim2:hover, #Sim1:hover{
     cursor: grab;
     background: var(--blue-Main);
     transition: 3s ease;
-}
+} */
 @media (max-width: 750px) and (min-width: 0px) {
     #hideandDisplay{
         bottom: 100px;
-        left: 35vh;
+        left: 40vh;
     }
 }
 
