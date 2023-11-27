@@ -120,3 +120,15 @@ caller2.addEventListener("click", function () {
     }
     
 })
+
+// Trying to call all the numbers when its container is clicked
+let AllContactsnames = document.querySelectorAll(".ThirdContact")
+AllContactsnames.innerHTML = `${AllContactsnames.innerHTML}`;
+let jara = AllContactsnames.firstChildElement
+let OneClick = document.querySelectorAll(".ThirdContact").length;
+ for (let i = 0; i < OneClick; i++) {
+    document.querySelectorAll(".ThirdContact")[i].addEventListener("click", function () {
+        alert(`Calling`)
+    })
+    
+ }

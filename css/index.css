@@ -109,6 +109,9 @@ body {
     left: -10px;
 }
  */
+ /* .calls{
+    background: var(--primary-Orange);
+ } */
 
 
 
@@ -194,7 +197,7 @@ body {
     column-gap: 35px;
     row-gap: 10px;
     background: var(--dark-secondary);
-    /* height: 250px; */
+    height: 350px;
 }
 .phones button{
     font-size: 1.8rem;
@@ -232,13 +235,37 @@ body {
     color: var(--white-Primary);
     margin: 10px;
     padding: 12px;
-    border-radius: 50%;
     position: relative;
     bottom: 5px;
     left: 25px;
 }
+.callButton{
+    grid-column: -3;
+}
+
+.callButton i{
+        width: 40px;
+        height: 40px;
+        background: var(--deep-Blue);
+        color: var(--white-Primary);
+        font-size: 20px;
+        padding: 10px;
+            border-radius: 50%;
+}
+#Sim1{
+    position: relative;
+    left: 30px;
+    bottom: 55px;
+}
+#Sim2{
+    position: relative;
+    left: -30px;
+}
 #showNumbers{
-    background: transparent
+    background: transparent;
+    font-size: 20px;
+   position: relative;
+   bottom: 50px;
 }
 #showNumbers:hover{
     cursor: pointer;
@@ -252,7 +279,7 @@ body {
     padding: 14px;
     position: absolute;
     bottom: 100px;
-    left: 60vh;
+    left: 190vh;
 }
 #hideandDisplay:hover{
     cursor: pointer;
