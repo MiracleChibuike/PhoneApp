@@ -74,11 +74,14 @@ openNumbers.addEventListener("click", function openDatas() {
 
 // This code is going to be adding the values pressed in the phone and display them on this container
 function DisplayNum(display) {
+        let deleteNums = document.getElementById("removeNumIcon");
     let dataDisplay = document.querySelector(".displayNumbers");
     let output = dataDisplay.innerHTML;
     output += display;
     dataDisplay.innerHTML += display
-    console.log(output)
+    console.log(display);
+    // deleteNums.style.visibility = "visible";
+    // console.log(deleteNums)
 }
 
 // Function to pass a message of thr Number being called
@@ -94,16 +97,29 @@ let callIcon = document.getElementById("Sim1");
 callIcon.addEventListener("click", function () {
     let output;
     let dataDisplay = document.querySelector(".displayNumbers")
-    output = dataDisplay.innerHTML
+    output = dataDisplay.innerHTML;
+    let deleteNums = document.getElementById("removeNumIcon");
+
     if (output == "") {
         alert("Please type a number to call")
     } else {
+            // let deleteNums = document.getElementById("removeNumIcon");
+            //  deleteNums.style.visibility = "visible"
         alert(` Sim 1 Outgoing Call \n Calling ${output}`)
-        alert(`Call Duration: \n 0.00 seconds`)
-    console.log(callIcon)
+        alert(`Call Duration: \n 0.00 seconds`);
+       
+
+    // console.log(callIcon);
+    console.log(deleteNums)
     }
+
+    let callMeDirect = document.getElementById("numberCallIcon");
+// console.log(callMeDirect.innerHTML = "halal")
     
 })
+
+// See whether the anchor can call numbers directly;
+
 
 // For Sim2 Call Dial
 let caller2 = document.getElementById("Sim2")
@@ -130,5 +146,17 @@ let OneClick = document.querySelectorAll(".ThirdContact").length;
     document.querySelectorAll(".ThirdContact")[i].addEventListener("click", function () {
         alert(`Calling`)
     })
+    let namesArray = {
+        name1: "Evans"
+    }
+    // console.log(AllContactsnames)
     
  }
+
+// let AllContactsnames = document.querySelectorAll(".ThirdContact")
+// AllContactsnames.innerHTML;
+// let ContactsObject = {
+//     AllContactsnames
+// }
+// console.log(ContactsObject)
+// console.log(AllContactsnames.innerHTML)

@@ -79,6 +79,10 @@ body {
     color: var(--white-Primary);
     font-size: 1.3rem;
 }
+.contactName a {
+    color: var(--white-Primary);
+    text-decoration: none;
+}
 .iconInfo{
     margin-left: 10px;
 }
@@ -112,6 +116,7 @@ body {
  /* .calls{
     background: var(--primary-Orange);
  } */
+
 
 
 
@@ -272,14 +277,15 @@ body {
 }
 #hideandDisplay{
     color: var(--white-Primary);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: var(--deep-Blue);
     border-radius: 50%;
-    padding: 14px;
+    padding: 18px;
     position: absolute;
     bottom: 100px;
     left: 190vh;
+    font-size: 20px;
 }
 #hideandDisplay:hover{
     cursor: pointer;
@@ -293,6 +299,12 @@ body {
     background: var(--dark-secondary);
     text-align: center;
 }
+
+/* For the remove icon */
+#removeNumIcon{
+   content-visibility: hidden;
+   
+}
 /* For the 2 Phone call rings icon */
 /* #Sim2:hover, #Sim1:hover{
     cursor: grab;
@@ -302,7 +314,7 @@ body {
 @media (max-width: 750px) and (min-width: 0px) {
     #hideandDisplay{
         bottom: 100px;
-        left: 40vh;
+        left: 37vh;
     }
 }
 
